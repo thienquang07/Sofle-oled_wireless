@@ -15,7 +15,7 @@ layers:
   - F9
   - F10
   - F11
-  - CAPS
+  - '`'
   - '1'
   - '2'
   - '3'
@@ -40,7 +40,7 @@ layers:
   - )
   - '|'
   - {t: ▽, type: trans}
-  - '`'
+  - {t: ▽, type: trans}
   - '-'
   - KP PLUS
   - '{'
