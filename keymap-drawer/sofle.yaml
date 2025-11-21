@@ -239,7 +239,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: debugging, h: toggle}
   - RSHFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
