@@ -43,8 +43,8 @@ layers:
   - {t: C, h: Ctl+C}
   - {t: V, h: Ctl+V}
   - B
-  - '&mkp MB1'
-  - '&mkp MB2'
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - N
   - M
   - ','
