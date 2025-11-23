@@ -139,7 +139,7 @@
                                            &kp LGUI            &kp LALT            &kp LCTRL           &mo LOWER           &kp RET      &kp SPACE  &mo RAISE           &kp RCTRL           &kp RALT      &kp RGUI
             >;
 
-            sensor-bindings = <&mouseLR_encoder>, <&mouseUD_encoder>;
+            sensor-bindings = <&mouseUD_encoder>, <&mouseLR_encoder>;
         };
 
         lower_layer {
