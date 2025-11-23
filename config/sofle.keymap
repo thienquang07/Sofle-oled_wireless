@@ -47,7 +47,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_UP>, <&mmv MOVE_DOWN>;
 
-            tap-ms = <20>;
+            tap-ms = <10>;
         };
 
         mouseLR_encoder: mouseLR_encoder {
@@ -56,7 +56,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_LEFT>, <&mmv MOVE_RIGHT>;
 
-            tap-ms = <20>;
+            tap-ms = <10>;
         };
 
         HMShiftR: HMShiftR {
