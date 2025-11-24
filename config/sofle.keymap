@@ -209,8 +209,8 @@
             bindings = <
 &trans  &trans  &trans   &trans         &trans   &tog 4                            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp F5  &kp F6   &kp F7         &kp F8   &tog 4                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F9  &kp F10  &kp F11        &kp F12  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans   &kp BACKSPACE  &kp DEL  &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11        &kp F12  &kp HOME                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &kp BACKSPACE  &kp DEL  &kp END         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans   &trans         &trans   &kp LEFT_SHIFT  &trans    &trans  &tog 4  &trans  &trans  &trans
             >;
 
