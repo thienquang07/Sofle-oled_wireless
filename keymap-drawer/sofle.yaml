@@ -99,7 +99,7 @@ layers:
   - )
   - '|'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - SPACE
   - '-'
   - KP PLUS
   - '{'
