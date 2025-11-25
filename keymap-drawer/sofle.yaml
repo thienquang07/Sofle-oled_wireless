@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - BSPC
-  - TAB
+  - {t: TAB, h: debugging}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LCTRL}
@@ -269,7 +269,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - F9
   - F10
   - F11
