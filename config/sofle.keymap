@@ -126,6 +126,7 @@
             tapping-term-ms = <350>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <13 14 15 16 25 26 27 28 53 29 41 40 39>;
+            hold-while-undecided;
         };
 
         MouseHorizontalScroll: MouseHorizontalScroll {
@@ -147,6 +148,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54>;
             hold-trigger-on-release;
             flavor = "balanced";
+            hold-while-undecided;
         };
 
         HMLshift2: HMLshift2 {
@@ -159,6 +161,18 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 55 56 57 58 59>;
             flavor = "balanced";
+            hold-while-undecided;
+        };
+
+        LongPressOnRelease: LongPressOnRelease {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LONGPRESSONRELEASE";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
         };
     };
 
@@ -176,11 +190,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&LongPress LA(F4) ESC     &kp N1              &kp N2              &kp N3              &kp N4               &kp N5                                      &kp N6              &kp N7                    &kp N8        &kp N9            &kp N0               &kp DELETE
-&kp CAPSLOCK              &kp Q               &kp W               &kp E               &kp R                &LongPress LC(T) T                          &LongPress RC(Y) Y  &kp U                     &kp I         &kp O             &kp P                &kp BSPC
-&LongPressModifier 4 TAB  &HML LEFT_WIN A     &HML LEFT_ALT S     &HML LCTRL D        &HMLshift2 LSHIFT F  &kp G                                       &kp H               &HMRshift2 RIGHT_SHIFT J  &HMR RCTRL K  &HMR RIGHT_ALT L  &HMR RIGHT_WIN SEMI  &kp SQT
-&kp LSHFT                 &LongPress LC(Z) Z  &LongPress LC(X) X  &LongPress LC(C) C  &LongPress LC(V) V   &kp B               &mkp LCLK    &mkp RCLK  &kp N               &kp M                     &kp COMMA     &kp DOT           &kp FSLH             &kp RSHFT
-                                              &kp LGUI            &kp LALT            &kp LCTRL            &mo LOWER           &kp RET      &kp SPACE  &mo RAISE           &kp RCTRL                 &kp RALT      &kp RGUI
+&LongPress LA(F4) ESC     &kp N1                       &kp N2                       &kp N3              &kp N4                       &kp N5                                               &kp N6                       &kp N7                    &kp N8        &kp N9            &kp N0               &kp DELETE
+&kp CAPSLOCK              &kp Q                        &kp W                        &kp E               &kp R                        &LongPressOnRelease LC(T) T                          &LongPressOnRelease RC(Y) Y  &kp U                     &kp I         &kp O             &kp P                &kp BSPC
+&LongPressModifier 4 TAB  &HML LEFT_WIN A              &HML LEFT_ALT S              &HML LCTRL D        &HMLshift2 LSHIFT F          &kp G                                                &kp H                        &HMRshift2 RIGHT_SHIFT J  &HMR RCTRL K  &HMR RIGHT_ALT L  &HMR RIGHT_WIN SEMI  &kp SQT
+&kp LSHFT                 &LongPressOnRelease LC(Z) Z  &LongPressOnRelease LC(X) X  &LongPress LC(C) C  &LongPressOnRelease LC(V) V  &kp B                        &mkp LCLK    &mkp RCLK  &kp N                        &kp M                     &kp COMMA     &kp DOT           &kp FSLH             &kp RSHFT
+                                                       &kp LGUI                     &kp LALT            &kp LCTRL                    &mo LOWER                    &kp RET      &kp SPACE  &mo RAISE                    &kp RCTRL                 &kp RALT      &kp RGUI
             >;
 
             sensor-bindings = <&MouseHorizontalScroll>, <&scroll_encoder>;
