@@ -94,14 +94,14 @@ layers:
   - '%'
   - ^
   - '&'
-  - KP MULTIPLY
+  - '*'
   - (
   - )
   - '|'
   - {t: ▽, type: trans}
   - SPACE
   - '-'
-  - KP PLUS
+  - +
   - '{'
   - '}'
   - {t: ▽, type: trans}
