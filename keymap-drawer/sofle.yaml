@@ -50,7 +50,7 @@ layers:
   - ','
   - .
   - /
-  - ENTER
+  - {t: ENTER, h: RIGHT SHIFT}
   - LGUI
   - LALT
   - LCTRL
